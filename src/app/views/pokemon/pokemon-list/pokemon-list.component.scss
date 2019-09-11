@@ -1,8 +1,13 @@
 
 .grid{
     display: grid;
-    grid-template-columns: 24.25% 24.25% 24.25% 24.25%;
+    grid-template-columns: 19.8% 19.8% 19.8% 19.8% 19.8%;
     grid-gap: 1%;
+}
+
+.example-header-image {
+  background-image: url('https://i.pinimg.com/originals/a7/73/64/a773645c4ef8e7c77eee0f70e3e9e5a4.jpg');
+  background-size: cover;
 }
 
 .container{
@@ -13,4 +18,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.capitalize{
+  text-transform: capitalize;
+}
+
+.gradient{
+  background:radial-gradient(#009688, #607D8B);
+  margin: 1px -16px 6px -16px
 }

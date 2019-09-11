@@ -5,22 +5,25 @@
                     <input matInput placeholder="Placeholder">
             </mat-form-field>
         </div>        
-        <div class="grid">
-                <div class="col">
+        <div class="grid" >
+                <div class="col" *ngFor="let pokemon of pokemons">
                     <mat-card class="example-card">
                         <mat-card-header>
-                        <mat-card-title>ditto</mat-card-title>
-                        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title class="capitalize">{{pokemon.name}}</mat-card-title>
+                        <mat-card-subtitle>{{pokemon.id}}</mat-card-subtitle>
                         </mat-card-header>
-                        <img mat-card-image src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png">
+                        <div class="center-align gradient">
+                            <img mat-card-lg-image src="{{pokemon.sprites.front_default}}">
+                        </div>                        
                         <mat-card-content>
-                        <p>
-                            The Shiba Inu 
-                        </p>
+                            <mat-chip-list  >
+                                <p><b>Tipos:</b></p>
+                                <mat-chip color="accent" *ngFor="let type of pokemon.types"  class="capitalize" selected>{{type.type.name}}</mat-chip>
+                            </mat-chip-list>
                         </mat-card-content>
-                        <mat-card-actions>
-                        <button mat-button>LIKE</button>
-                        <button mat-button>SHARE</button>
+                        <mat-card-actions class="center-align">
+                            <button mat-raised-button color="primary"> Ver Detalles</button>
                         </mat-card-actions>
                     </mat-card>
                 </div>               
