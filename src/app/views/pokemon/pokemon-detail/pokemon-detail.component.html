@@ -1,1 +1,55 @@
-<p>pokemon-detail works!</p>
+ <div *ngIf="pokemonData" @enterState>
+        <mat-card>
+                <mat-tab-group>
+                        <mat-tab label="Informacion"> 
+                            <div class="grid">
+                                <div>
+                                    <h1 class="uppercase">{{pokemonData.name}}</h1>
+                                    <div class="center-align">
+                                        <img mat-card-lg-image src="{{pokemonData.sprites.front_default}}">
+                                    </div>                                    
+                                </div>
+                                <div>
+                                    <div class="info-line">
+                                        <div class="title">Experiencia:</div>
+                                        <div class="info">{{pokemonData.base_experience}}</div>
+                                    </div> 
+                                    <div class="info-line">
+                                        <div class="title">Peso</div>
+                                        <div class="info">{{pokemonData.weight}}</div>
+                                    </div> 
+                                    <div class="info-line">
+                                        <div class="title">Habilidades</div>
+                                        <div class="info" >
+                                            <mat-chip-list >
+                                                <mat-chip color="accent" *ngFor="let ability of pokemonData.abilities"  class="uppercase" selected>{{ability.ability.name}}</mat-chip>
+                                            </mat-chip-list>
+                                        </div>                                        
+                                    </div>                                                                                                            
+                                </div>
+                            </div>
+                            
+                        </mat-tab>
+                        <mat-tab label="Imágenes">
+                            <div class="grid">
+                                <div class="center-align">
+                                    <img mat-card-lg-image src="{{pokemonData.sprites.front_default}}">
+                                </div>
+                                <div class="center-align">
+                                    <img mat-card-lg-image src="{{pokemonData.sprites.back_default}}">
+                                </div>
+                                <div class="center-align">
+                                    <img mat-card-lg-image src="{{pokemonData.sprites.front_shiny}}">
+                                </div>
+                                <div class="center-align">
+                                    <img mat-card-lg-image src="{{pokemonData.sprites.back_shiny}}">
+                                </div>
+                            </div>
+                        </mat-tab>
+                </mat-tab-group>
+        </mat-card>
+ </div>
+
+ 
+   
+ 

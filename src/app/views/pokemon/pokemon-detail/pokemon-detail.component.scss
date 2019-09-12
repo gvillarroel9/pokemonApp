@@ -1,0 +1,27 @@
+.mat-card{
+    margin: 2em 4em;
+    padding: 0px;
+    background: #deb887c2;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    grid-gap: 1%;
+    padding: 1em;
+}
+
+.uppercase{
+    text-transform: uppercase;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.title{
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 4px;
+}
+ .info-line{
+    margin-bottom: 24px;
+ }

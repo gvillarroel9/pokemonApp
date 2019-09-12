@@ -5,19 +5,25 @@
     grid-gap: 1%;
 }
 
+.mat-card{
+  background: #ddaa68c2;
+}
+
 .example-header-image {
   background-image: url('https://i.pinimg.com/originals/a7/73/64/a773645c4ef8e7c77eee0f70e3e9e5a4.jpg');
   background-size: cover;
 }
 
-.container{
-    margin: 2% 4% 2% 4%; 
+.mat-form-field-flex {
+  border-radius: 4px;
+  background: #70809094 !important;
+}
+.search-btn{
+  margin: 0.8em 2em 2em 2em;
 }
 
-.center-align{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.container{
+    margin: 2% 4% 2% 4%; 
 }
 
 .capitalize{
@@ -25,6 +31,6 @@
 }
 
 .gradient{
-  background:radial-gradient(#009688, #607D8B);
+  background:radial-gradient(#E91E63, #000000);
   margin: 1px -16px 6px -16px
 }

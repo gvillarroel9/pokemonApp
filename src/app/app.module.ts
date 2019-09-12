@@ -16,6 +16,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import { PokemonDetailComponent } from './views/pokemon/pokemon-detail/pokemon-detail.component';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatTabsModule} from '@angular/material/tabs'; 
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import {MatChipsModule} from '@angular/material/chips';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
@@ -34,7 +37,9 @@ import {MatChipsModule} from '@angular/material/chips';
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
-    MatChipsModule
+    MatChipsModule,
+    MatTabsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

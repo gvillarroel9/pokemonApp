@@ -2,3 +2,8 @@
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 html, body { height: 100%; background-image: url("https://cdn.atomix.vg/wp-content/uploads/2014/10/campamento-pokemon-fondo.png");}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.center-align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

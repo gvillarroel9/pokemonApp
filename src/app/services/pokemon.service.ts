@@ -19,4 +19,14 @@ export class PokemonService {
     return this.http.get(urlPokemon)
                 .pipe();
   }
+
+  getPokemonSpecies(id){
+    return this.http.get(environment.urlApi+'pokemon-species/'+id)
+                .pipe();
+  }
+
+  getEvolutionChain(urlPokemon){
+    return this.http.get(urlPokemon)
+                .pipe();
+  }
 }
