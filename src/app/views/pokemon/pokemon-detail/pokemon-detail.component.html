@@ -46,6 +46,14 @@
                                 </div>
                             </div>
                         </mat-tab>
+                        <mat-tab label="Evoluciones">
+                                <div class="">
+                                    <div class="center-align" *ngFor="let pokemon of evolutions">                                        
+                                        <img mat-card-lg-image src="{{pokemon.sprites.front_default}}">
+                                        <h1 class="uppercase">{{pokemon.name}}</h1>
+                                    </div>
+                                </div>
+                        </mat-tab>
                 </mat-tab-group>
         </mat-card>
  </div>
